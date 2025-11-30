@@ -6,16 +6,73 @@
     <title>CPS530 Lab 10 - Framework Documentation</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Roboto', sans-serif; }
-        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; }
-        .section-title { font-size: 2em; margin-top: 40px; color: #667eea; }
-        .code-block { background-color: #f5f5f5; padding: 15px; border-left: 4px solid #667eea; margin: 20px 0; }
+        body { 
+            font-family: 'Neuton', serif;
+            background-color: #ecc8af;
+        }
+        .header { 
+            background: linear-gradient(135deg, #800e13 0%, #ad2831 100%);
+            color: #ecc8af;
+            padding: 60px 0;
+        }
+        .header h1 {
+            font-family: 'Limelight', cursive;
+        }
+        .section-title { 
+            font-size: 2em;
+            margin-top: 40px;
+            color: #800e13;
+            font-family: 'Limelight', cursive;
+        }
+        .code-block { 
+            background-color: #250902;
+            color: #ecc8af;
+            padding: 15px;
+            border-left: 4px solid #ad2831;
+            margin: 20px 0;
+        }
+        .card {
+            background-color: white !important;
+        }
+        .card-title {
+            color: #800e13 !important;
+            font-family: 'Limelight', cursive;
+        }
+        table thead {
+            background-color: #ad2831;
+        }
+        table thead th {
+            color: #ecc8af;
+        }
+        table.striped tbody tr:nth-child(odd) {
+            background-color: #ecc8af;
+        }
+        .card-panel {
+            background-color: #ad2831 !important;
+            color: #ecc8af !important;
+        }
+        .card-panel strong {
+            color: #ecc8af;
+        }
+        .page-footer {
+            background-color: #250902 !important;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="header center-align">
-        <div class="container">
+        <div class="container" style="background-color: transparent;">
             <h1>Lab 10 Problem 2: Materialize CSS Framework</h1>
             <p class="flow-text">Beenish Saeed - CPS530 Fall 2025</p>
         </div>
@@ -27,9 +84,9 @@
                 <h2 class="section-title"><i class="material-icons">build</i> Framework Installation</h2>
                 <p>I chose <strong>Materialize CSS</strong>, a modern responsive front-end framework based on Material Design principles.</p>
                 
-                <h5>Installation Steps:</h5>
+                <h5 style="color: #ad2831; font-family: 'Neuton', serif; font-weight: 700;">Installation Steps:</h5>
                 <ol class="collection">
-                    <li class="collection-item">Created a GitHub repository named <code>beenishsaeed26.github.io</code></li>
+                    <li class="collection-item">Created a GitHub repository named <code style="background-color: #250902; color: #ecc8af; padding: 2px 6px;">BeenishSaeed.github.io</code></li>
                     <li class="collection-item">Enabled GitHub Pages in repository settings (Settings → Pages → Source: main branch)</li>
                     <li class="collection-item">Added Materialize CSS via CDN in the HTML head:
                         <div class="code-block">
@@ -49,7 +106,7 @@
                 
                 <div class="row">
                     <div class="col s12 m4">
-                        <div class="card blue lighten-5">
+                        <div class="card">
                             <div class="card-content">
                                 <span class="card-title">Grid System</span>
                                 <p>Used the 12-column responsive grid for layout structure.</p>
@@ -57,7 +114,7 @@
                         </div>
                     </div>
                     <div class="col s12 m4">
-                        <div class="card purple lighten-5">
+                        <div class="card">
                             <div class="card-content">
                                 <span class="card-title">Components</span>
                                 <p>Implemented cards, collections, and icons from the framework.</p>
@@ -65,7 +122,7 @@
                         </div>
                     </div>
                     <div class="col s12 m4">
-                        <div class="card pink lighten-5">
+                        <div class="card">
                             <div class="card-content">
                                 <span class="card-title">Styling</span>
                                 <p>Applied Material Design color schemes and typography.</p>
@@ -112,7 +169,7 @@
         <div class="row">
             <div class="col s12">
                 <h2 class="section-title"><i class="material-icons">school</i> Learning Outcomes</h2>
-                <div class="card-panel teal lighten-4">
+                <div class="card-panel">
                     <p><strong>Key Takeaways:</strong></p>
                     <ul class="browser-default">
                         <li>Frameworks significantly speed up development by providing pre-built components</li>
@@ -126,10 +183,10 @@
         </div>
     </div>
 
-    <footer class="page-footer grey darken-3">
-        <div class="container center-align">
-            <p>CPS530 Lab 10 - Fall 2025 | Built with Materialize CSS</p>
-            <p>GitHub Repository: <a href="https://github.com/beenishsaeed26/beenishsaeed26.github.io" class="white-text">View Source</a></p>
+    <footer class="page-footer">
+        <div class="container center-align" style="background-color: transparent;">
+            <p style="color: #ecc8af;">CPS530 Lab 10 - Fall 2025 | Built with Materialize CSS</p>
+            <p>GitHub Repository: <a href="https://github.com/beenishsaeed26/BeenishSaeed.github.io" class="white-text" style="color: #ecc8af !important;">View Source</a></p>
         </div>
     </footer>
 
