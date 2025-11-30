@@ -13,6 +13,7 @@
         body { 
             font-family: 'Neuton', serif;
             background-color: #ecc8af;
+            font-size: 1.3rem;
         }
         .header { 
             background: linear-gradient(135deg, #800e13 0%, #ad2831 100%);
@@ -22,6 +23,9 @@
         .header h1 {
             font-family: 'Limelight', cursive;
         }
+        .header p {
+            font-size: 1.5rem;
+        }
         .section-title { 
             font-size: 2em;
             margin-top: 40px;
@@ -29,11 +33,12 @@
             font-family: 'Limelight', cursive;
         }
         .code-block { 
-            background-color: #250902;
+            background-color: #461220;
             color: #ecc8af;
             padding: 15px;
             border-left: 4px solid #ad2831;
             margin: 20px 0;
+            font-size: 1.1rem;
         }
         .card {
             background-color: white !important;
@@ -42,11 +47,18 @@
             color: #800e13 !important;
             font-family: 'Limelight', cursive;
         }
+        .card-content p {
+            font-size: 1.2rem;
+        }
         table thead {
             background-color: #ad2831;
         }
         table thead th {
             color: #ecc8af;
+            font-size: 1.3rem;
+        }
+        table tbody td {
+            font-size: 1.2rem;
         }
         table.striped tbody tr:nth-child(odd) {
             background-color: #ecc8af;
@@ -57,9 +69,17 @@
         }
         .card-panel strong {
             color: #ecc8af;
+            font-size: 1.3rem;
+        }
+        .card-panel ul li {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
         }
         .page-footer {
-            background-color: #250902 !important;
+            background-color: #461220 !important;
+        }
+        .page-footer p {
+            font-size: 1.2rem;
         }
         .container {
             background-color: white;
@@ -67,6 +87,15 @@
             border-radius: 8px;
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+        .collection-item {
+            font-size: 1.2rem;
+        }
+        h5 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.3rem;
         }
     </style>
 </head>
@@ -86,7 +115,7 @@
                 
                 <h5 style="color: #ad2831; font-family: 'Neuton', serif; font-weight: 700;">Installation Steps:</h5>
                 <ol class="collection">
-                    <li class="collection-item">Created a GitHub repository named <code style="background-color: #250902; color: #ecc8af; padding: 2px 6px;">BeenishSaeed</code></li>
+                    <li class="collection-item">Created a GitHub repository named <code style="background-color: #461220; color: #ecc8af; padding: 2px 6px;">BeenishSaeed.github.io</code></li>
                     <li class="collection-item">Enabled GitHub Pages in repository settings (Settings → Pages → Source: main branch)</li>
                     <li class="collection-item">Added Materialize CSS via CDN in the HTML head:
                         <div class="code-block">
@@ -170,6 +199,7 @@
             <div class="col s12">
                 <h2 class="section-title"><i class="material-icons">school</i> Learning Outcomes</h2>
                 <div class="card-panel">
+                    <p><strong>Key Takeaways:</strong></p>
                     <ul class="browser-default">
                         <li>Frameworks significantly speed up development by providing pre-built components</li>
                         <li>Material Design creates a consistent, modern look across devices</li>
